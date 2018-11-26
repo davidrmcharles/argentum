@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Record{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="date">Date</label><br/>
+    <input type="text" id="date"><br/>
+
+    <label for="amount">Amount</label><br/>
+    <input type="text" id="amount"><br/>
+
+    <label for="description">Description</label><br/>
+    <input type="text" id="description"><br/><br/>
+
+    <input type="submit" value="Record"/>
+  </form>
+{% endblock %}

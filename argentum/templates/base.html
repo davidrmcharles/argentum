@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} - argentum</title>
+  </head>
+  <body>
+    <nav>
+      <h1>argentum</h1>
+      <h2>
+        <a href="/status">Status</a> |
+        <a href="/record">Record</a> |
+        <a href="/history">History</a>
+      </h2>
+    </nav>
+    <section class="content">
+    {% block content %}{% endblock %}
+    </section>
+  </body>
+</html>
