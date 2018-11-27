@@ -4,7 +4,7 @@ bp = flask.Blueprint('status', __name__)
 
 @bp.route('/')
 def index():
-    return flask.redirect(flask.url_for('status'))
+    return flask.redirect(flask.url_for('status.status'))
 
 @bp.route('/status', methods=['GET', 'POST'])
 def status():
