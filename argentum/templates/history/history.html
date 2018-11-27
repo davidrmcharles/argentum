@@ -3,7 +3,7 @@
 {% block title %}History{% endblock %}
 
 {% block content %}
-  <table>
+  <table width="100%" style="max-width: 400px">
     <tr>
       <th>Date</th>
       <th>Amount</th>
@@ -12,7 +12,7 @@
     {% for transaction in transactions %}
     <tr>
       <td>{{ transaction.date }}</td>
-      <td>{{ transaction.amount }}</td>
+      <td>${{ transaction.amount }}</td>
       <td>{{ transaction.description }}</td>
     </tr>
     {% endfor %}
