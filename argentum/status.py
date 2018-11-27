@@ -13,9 +13,9 @@ def status():
             'status/status.html',
             first_day='2018-11-16',
             last_day='2018-11-29',
-            budget='$1200.00',
-            spent='$999.00',
-            remaining='$201.00',
+            budget='1200.00',
+            spent='999.00',
+            remaining='201.00',
             )
 
     if flask.request.method == 'POST':

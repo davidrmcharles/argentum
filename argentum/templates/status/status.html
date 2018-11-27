@@ -3,13 +3,39 @@
 {% block title %}Status{% endblock %}
 
 {% block content %}
-  <ul>
-    <li>Period: {{ first_day}}..{{ last_day}}</li>
-    <li>Budget: {{ budget }}</li>
-    <li>Spent: {{ spent }}</li>
-    <li>Remaining: {{ remaining }}</li>
-  </ul>
-  <form method="post" onsubmit="return confirm('Are you sure?');">
-    <input type="submit" value="Finalize"/>
-  </form>
+  <table width="100%" style="text-align: center; max-width: 400px">
+    <tr style="font-size: 80%">
+      <th>First Day</th>
+      <th>Last Day</th>
+    </tr>
+    <tr style="font-size: 120%">
+      <td>{{ first_day}}</td>
+      <td>{{ last_day}}</td>
+    </tr>
+  </table>
+  <table width="100%" style="text-align: center; max-width: 400px">
+    <tr style="font-size: 80%">
+      <th>Budget</th>
+      <th/>
+      <th>Spent</th>
+      <th/>
+      <th>Remaining</th>
+    </tr>
+    <tr style="font-size: 120%">
+      <td>${{ budget }}</td>
+      <td>&minus;</td>
+      <td>${{ spent }}</td>
+      <td>=</td>
+      <td>${{ remaining }}</td>
+    </tr>
+  </table>
+  <table width="100%" style="max-width: 400px">
+    <tr>
+      <td>
+        <form method="post" onsubmit="return confirm('Are you sure?')">
+          <input type="submit" value="Finalize" style="width: 100%; font-size: 120%"/>
+        </form>
+      </td>
+    </tr>
+  </table>
 {% endblock %}
