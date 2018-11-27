@@ -4,15 +4,19 @@
 
 {% block content %}
   <form method="post">
-    <label for="date">Date</label><br/>
-    <input type="text" id="date"><br/>
-
-    <label for="amount">Amount</label><br/>
-    <input type="text" id="amount"><br/>
-
-    <label for="description">Description</label><br/>
-    <input type="text" id="description"><br/><br/>
-
-    <input type="submit" value="Record"/>
+    <label for="date" style="font-weight: bold; font-size: 80%">Date</label>
+    <br/>
+    <input type="text" id="date" style="box-sizing: border-box; width: 100%; max-width: 400px; font-size: 120%">
+    <br/>
+    <label for="amount" style="font-weight: bold; font-size: 80%">Amount</label>
+    <br/>
+    <input type="text" id="amount" style="box-sizing: border-box; width: 100%; max-width: 400px; font-size: 120%">
+    <br/>
+    <label for="description" style="font-weight: bold; font-size: 80%">Description</label>
+    <br/>
+    <input type="text" id="description" style="box-sizing: border-box; width: 100%; max-width: 400px; font-size: 120%">
+    <br/>
+    <br/>
+    <input type="submit" value="Record" style="box-sizing: borfder-box; width: 100%; max-width: 400px; font-size: 120%"/>
   </form>
 {% endblock %}
