@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}History{% endblock %}
+
+{% block content %}
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+    </tr>
+    {% for transaction in transactions %}
+    <tr>
+      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.description }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
