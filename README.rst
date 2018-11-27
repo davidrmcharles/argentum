@@ -15,6 +15,6 @@ Activate the virtual environment::
 
     . venv/bin/activate
 
-Install Flask:
+Install Flask::
 
     pip install flask
