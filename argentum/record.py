@@ -8,6 +8,7 @@ def record():
     if flask.request.method == 'GET':
         return flask.render_template(
             'record/record.html',
+            view='record',
             today=datetime.datetime.now().strftime('%Y-%m-%d')
             )
 

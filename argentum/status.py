@@ -11,6 +11,7 @@ def status():
     if flask.request.method == 'GET':
         return flask.render_template(
             'status/status.html',
+            view='status',
             first_day='2018-11-16',
             last_day='2018-11-29',
             budget='1200.00',

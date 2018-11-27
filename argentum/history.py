@@ -6,6 +6,7 @@ bp = flask.Blueprint('history', __name__)
 def history():
     return flask.render_template(
         'history/history.html',
+        view='history',
         transactions=[
             dict(
                 date='2018-11-19',
