@@ -3,25 +3,25 @@
 {% block title %}Status{% endblock %}
 
 {% block content %}
-  <table width="100%" style="text-align: center; max-width: 400px">
-    <tr style="font-size: 80%">
+  <table class="not-too-wide" style="text-align: center">
+    <tr>
       <th>First Day</th>
       <th>Last Day</th>
     </tr>
-    <tr style="font-size: 120%">
+    <tr class="big-font">
       <td>{{ first_day}}</td>
       <td>{{ last_day}}</td>
     </tr>
   </table>
-  <table width="100%" style="text-align: center; max-width: 400px">
-    <tr style="font-size: 80%">
+  <table class="not-too-wide" style="text-align: center">
+    <tr>
       <th>Budget</th>
       <th/>
       <th>Spent</th>
       <th/>
       <th>Remaining</th>
     </tr>
-    <tr style="font-size: 120%">
+    <tr class="big-font">
       <td>${{ budget }}</td>
       <td>&minus;</td>
       <td>${{ spent }}</td>
@@ -29,11 +29,11 @@
       <td>${{ remaining }}</td>
     </tr>
   </table>
-  <table width="100%" style="max-width: 400px">
+  <table width="100%" class="not-too-wide">
     <tr>
       <td>
         <form method="post" onsubmit="return confirm('Are you sure?')">
-          <input type="submit" value="Finalize" style="width: 100%; font-size: 120%"/>
+          <input type="submit" value="Finalize"/>
         </form>
       </td>
     </tr>
